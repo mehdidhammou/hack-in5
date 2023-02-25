@@ -6,11 +6,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
+      colors: {
         'primary': '#0567F0',
+        'g-dark-blue': '#080729',
       },
+      fontFamily: {
+        'display': ['"Ailerons"', 'sans-serif'],
+      },
+      backgroundImage: {
+        'stars': "url('/public/bg-stars.png')",
+      }
     },
-  },
-  plugins: [
-  ],
+    plugins: [],
+  }
 }

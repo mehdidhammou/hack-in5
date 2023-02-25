@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Ailerons;
+        src: url(/public/fonts/Ailerons-Typeface.otf) format(otf);
+    }
+}
+
+@layer components {
+    .btn-gradient {
+        @apply bg-gradient-to-r from-purple-800 to-purple-500;
+    }
+
+    .body-gradient {
+        @apply bg-gradient-to-b from-g-dark-blue to-black;
+    }
+}
