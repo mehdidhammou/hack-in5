@@ -3,13 +3,14 @@ import Sun from "../../public/planets/Sun.png";
 import Mercury from "../../public/planets/mercury.png";
 import Venus from "../../public/planets/venus.png";
 import Earth from "../../public/planets/earth.png";
+import { useState } from "react";
 
 export default function News() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleClick = () => {
     setIsModalOpen(true);
-    };
+  };
   const news = [
     {
       title: "Sun",
@@ -58,9 +59,10 @@ export default function News() {
                 {item.description}
               </p>
               <div className="w-full flex justify-end">
-                <button 
-                onClick={handleClick}
-                className="text-sm font-bold border border-white rounded-lg px-4 py-2">
+                <button
+                  onClick={handleClick}
+                  className="text-sm font-bold border border-white rounded-lg px-4 py-2"
+                >
                   Read More
                 </button>
               </div>
