@@ -28,7 +28,7 @@ export default function NavBar() {
   };
 
   return (
-    <div className="w-full max-w-4xl p-8 flex items-center justify-between">
+    <div className="w-full max-w-7xl p-8 flex items-center justify-between">
       <div className="flex-1 items-center">
         <Link
         href={'/'}

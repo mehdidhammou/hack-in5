@@ -49,19 +49,19 @@ export default function News() {
         {news.map((item, index) => (
           <div
             key={index}
-            className="bg-gray-100/20 rounded-lg h-60 p-4 flex gap-4 flex-col md:flex-row justify-start"
+            className="bg-gray-100/20 rounded-lg overflow-y-scroll max-h-60 p-4 flex gap-4 flex-col md:flex-row justify-start"
           >
             <Image src={item.image} alt={item.title} className="w-10 h-10" />
-            <div className="flex flex-col gap-2">
-              <p className="text-sm">{item.date}</p>
+            <div className="flex flex-col gap-2d">
               <h1 className="text-xl uppercase font-bold">{item.title}</h1>
-              <p className="text-sm text-ellipsis overflow-y-scroll">
+              <p className="text-sm text-ellipsis overflow-y-clip text-gray-200">
                 {item.description}
               </p>
-              <div className="w-full flex justify-end">
+              <div className="w-full flex justify-between">
+                <p className="text-sm text-gray-500">{item.date}</p>
                 <button
                   onClick={handleClick}
-                  className="text-sm font-bold border border-white rounded-lg px-4 py-2"
+                  className="text-xs md:text-sm font-bold border border-white rounded-lg px-2    py-1"
                 >
                   Read More
                 </button>
